@@ -1,0 +1,133 @@
+/* -------------------------------------------------index.html */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--text-white: white;
+	--back-text-light-blue: rgb(164, 191, 232);
+	--background-color: #15304c;
+	--background-light-color: #b7cbe1;
+}
+body {
+	background-color: var(--background-light-color);
+}
+/* Header */
+
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: var(--background-color);
+	height: 70px;
+}
+
+.logo {
+	flex-grow: 1;
+}
+
+.logo img {
+	width: 200px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+/* Navigation in header */
+
+nav {
+	margin-right: 30px;
+	position: relative;
+	z-index: 1;
+}
+
+nav li {
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+nav li a {
+	color: var(--text-white);
+	text-decoration: none;
+}
+
+.menu-icon {
+	display: none;
+	margin-right: 30px;
+}
+
+/* class welcome - main section */
+
+.welcome {
+	background-image: url("img/background.webp");
+	min-height: calc(100vh - 70px);
+	background-size: cover;
+	background-position: center;
+}
+
+/* ------------------------------------------------------Home.html */
+
+.hero-image {
+	background-image: url("/img/bradavice.jpeg");
+	min-height: calc(100vh - 70px);
+	background-position: center;
+	background-size: cover;
+	background-position: 30%;
+}
+
+.hero-text {
+	color: var(--text-white);
+	position: absolute;
+	top: 100px;
+	left: 30px;
+	font-size: 30px;
+}
+
+h1 {
+	position: absolute;
+	left: 30px;
+	top: 20px;
+	color: var(--text-white);
+	text-align: right;
+	font-size: 30px;
+}
+
+/* ------------------------------------------------------About-us.html */
+
+.about-us {
+	margin: 0 auto;
+	width: 90%;
+	margin-top: 50px;
+}
+p {
+	margin-top: 10px;
+}
+
+/* -------------------------------------------------------Contact.html */
+
+.card-section {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	position: relative;
+	margin: 0 auto;
+	width: 90%;
+	margin-top: 70px;
+}
+
+.product-card {
+	display: flex;
+	gap: 10px;
+	height: 200px;
+	width: 300px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 30px;
+}
+.product-card img {
+	height: 140px;
+	width: 100px;
+}
